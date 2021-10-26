@@ -8,17 +8,23 @@ class MainMenuScreen(QMainWindow):
     def __init__(self):
         super(MainMenuScreen, self).__init__()
         loadUi('projekt.ui', self)
+        
+        self.setFixedSize(550, 500)
+
+        self.conn = sqlite3.connect("obr.db")
 
         self.kategoria_box.addItem("Końcówki do przewodów")
         self.kategoria_box.addItem("Narzędzia")
         self.kategoria_box.addItem("Przewody")
         self.kategoria_box.addItem("Inne")
 
+
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setApplicationName("Baza danych OBR")
     mainapp = MainMenuScreen()
-    flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
+    flags = QtCore.Qt.WindowFlags(QtCore.Qt.WindowMinimizeButtonHint | QtCore.Qt.WindowCloseButtonHint)
     mainapp.setWindowFlags(flags)
 
     mainapp.show()
