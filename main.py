@@ -17,6 +17,18 @@ class MainMenuScreen(QMainWindow):
         self.kategoria_box.addItem("Narzędzia")
         self.kategoria_box.addItem("Przewody")
         self.kategoria_box.addItem("Inne")
+        
+
+
+    def dodaj_przedmiot(self):
+        id = self.id_edit.text()
+        nazwa = self.nazwa_edit.text()
+        producent = self.producent_edit()
+        kategoria = str(self.kategoria_box())
+        ilosc = self.ilosc_box.value()
+        cena = self.cena_edit.text()
+        zdjecie = self.zdjecie_edit.text()
+        link = self.link_edit.text()
 
 
 
