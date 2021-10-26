@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>433</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QTextEdit" name="id_edit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="nazwa_edit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>60</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="producent_edit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>100</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dodaj_produkt">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>340</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj pozycję</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="id_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID produktu:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nazwa_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nazwa:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="producent_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Producent:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="kategoria_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kategoria:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="cena_edit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>220</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ilosc_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ilość:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cena_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cena:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="link_edit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>300</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="zdjecie_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Zdjęcie:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="link_label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Link:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="kategoria_box">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="ilosc_box">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>260</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj zdjęcie</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>660</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpcje">
+    <property name="title">
+     <string>Produkt</string>
+    </property>
+    <addaction name="actionDodaj_nowy"/>
+    <addaction name="actionEdytuj"/>
+    <addaction name="actionUsu"/>
+    <addaction name="separator"/>
+    <addaction name="actionZako_cz"/>
+   </widget>
+   <widget class="QMenu" name="menuZnajd">
+    <property name="title">
+     <string>Wyszukaj</string>
+    </property>
+    <addaction name="actionZnajd_produkt"/>
+    <addaction name="separator"/>
+    <addaction name="actionPoka_wszystkie"/>
+   </widget>
+   <addaction name="menuOpcje"/>
+   <addaction name="menuZnajd"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionDodaj_nowy">
+   <property name="text">
+    <string>Dodaj nowy</string>
+   </property>
+  </action>
+  <action name="actionEdytuj">
+   <property name="text">
+    <string>Edytuj</string>
+   </property>
+  </action>
+  <action name="actionUsu">
+   <property name="text">
+    <string>Usuń</string>
+   </property>
+  </action>
+  <action name="actionZnajd_produkt">
+   <property name="text">
+    <string>Znajdź produkt</string>
+   </property>
+  </action>
+  <action name="actionPoka_wszystkie">
+   <property name="text">
+    <string>Pokaż wszystkie</string>
+   </property>
+  </action>
+  <action name="actionZako_cz">
+   <property name="text">
+    <string>Zakończ</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
